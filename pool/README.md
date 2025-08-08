@@ -86,55 +86,66 @@ If the Solidity contract is deployed, the backend will connect to it for process
 Endpoints:
 
 /health
-Check service health.
+
+              Check service health.
 
 /submit
-Accepts mining shares from workers.
-Method: POST
-Auth: Bearer Token in Authorization header.
+
+     Accepts mining shares from workers.
+     Method: POST
+     Auth: Bearer Token in Authorization header.
 
 /stats
-Returns pool statistics.
+
+    Returns pool statistics.
 
 /metrics
-Prometheus metrics endpoint.
+
+            Prometheus metrics endpoint.
 
 /test-payout
-Simulates a payout using the payment engine.
 
-Startup Flow
-Load configuration.
+        Simulates a payout using the payment engine.
 
-Initialize logger.
+- Startup Flow
 
-Connect to PostgreSQL.
+- Load configuration.
+  
+- Initialize logger.
 
-Load security secrets.
+-Connect to PostgreSQL.
 
-Initialize payment engine (Solidity-based or stub).
+-Load security secrets.
 
-Start core pool logic.
+-Initialize payment engine (Solidity-based or stub).
 
-Launch HTTP server with middleware stack.
+-Start core pool logic.
 
-Start Python validation service (fraud detection, share verification).
+-Launch HTTP server with middleware stack.
 
-Serve metrics for Prometheus.
+-Start Python validation service (fraud detection, share verification).
 
-Production Roadmap
-Implement production-ready Solidity payment engine.
+-Serve metrics for Prometheus.
 
-Add full anti-fraud detection pipeline in Python.
+----------------------------------------------------------------------------------------------------------------
 
-Automatic database migrations.
+Production Roadmap:
 
-Public key/signature-based authentication.
+-Implement production-ready Solidity payment engine.
 
-Full integration and load testing.
+-Add full anti-fraud detection pipeline in Python.
 
-CI/CD pipeline setup.
+-Automatic database migrations.
 
-TLS configuration and load balancing.
+-Public key/signature-based authentication.
+
+-Full integration and load testing.
+
+-CI/CD pipeline setup.
+
+-TLS configuration and load balancing.
+
+-------------------------------------------------------------------------------------------------------------
 
 License
 MIT License. Free to use and modify.
