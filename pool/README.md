@@ -53,37 +53,38 @@ pool/
 
 1. Clone the repository:
 
-git clone https://github.com/NicolasAndrad3/mining-pool.git
-cd mining-pool
+       git clone https://github.com/NicolasAndrad3/mining-pool.git
+       cd mining-pool
 
 2. Create a .env file:
 
-SERVER_HOST=0.0.0.0
-SERVER_PORT=8080
-DATABASE_URL=postgres://mineruser:minerpass123@localhost:5432/miningpool?sslmode=disable
-API_KEY=testapikey_123456
-AUTH_TOKEN=default-token
+       SERVER_HOST=0.0.0.0
+       SERVER_PORT=8080
+       DATABASE_URL=postgres://mineruser:minerpass123@localhost:5432/miningpool?sslmode=disable
+       API_KEY=testapikey_123456
+       AUTH_TOKEN=default-token
 
 3. Install Go dependencies:
 
-go mod tidy
+       go mod tidy
 
 4. Install Python dependencies:
 
-                                  Running
+   Running
 
 Start the Go project:
 
-./pool
+     ./pool
 
 Run the Python validation service:
 
-cd python
-python runner.py
+     cd python
+     python runner.py
 
 If the Solidity contract is deployed, the backend will connect to it for processing payouts.
 
-Endpoints
+Endpoints:
+
 /health
 Check service health.
 
