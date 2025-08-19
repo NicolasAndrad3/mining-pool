@@ -8,8 +8,6 @@ High-performance mining pool backend built with Go and Python, integrated with P
 
 The architecture is modular and extensible, enabling future integration with smart contracts for automated payments and settlement using Solidity and ethers.js/web3.js. Security features include API Key authentication and antifraud mechanisms, while observability and CI/CD support ensure maintainability in large-scale environments.
 
--------
-
 # Features
 
 - Go for core mining logic and API – highly concurrent architecture handling job assignment, share validation, and worker communication with efficiency and scalability.
