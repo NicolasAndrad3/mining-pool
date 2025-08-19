@@ -2,9 +2,13 @@
 
 ![Banner](https://github.com/user-attachments/assets/623312c9-b87f-4a48-a3b4-5f3354989bf5)
 
-## Overview
+# Overview
 
-High-performance mining pool backend using **Go** and **Python**, integrated with PostgreSQL and Docker. Designed for real mining scenarios with share validation, fraud detection, and optional smart contract payments.
+High-performance mining pool backend built with Go and Python, integrated with PostgreSQL and Docker for real-world scalability. Designed for production mining scenarios with share validation, fraud detection, and structured logging.
+
+The architecture is modular and extensible, enabling future integration with smart contracts for automated payments and settlement using Solidity and ethers.js/web3.js. Security features include API Key authentication and antifraud mechanisms, while observability and CI/CD support ensure maintainability in large-scale environments.
+
+-------
 
 # Features
 
